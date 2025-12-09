@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Creative Calculator</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <div class="calculator">
+      <div class="top">
+        <div class="brand">
+          <span class="dot"></span>
+          <h1>CalcLab</h1>
+        </div>
+        <button id="themeToggle" aria-label="Toggle Theme">🌙</button>
+      </div>
+
+      <div class="display">
+        <div id="preview" class="preview">0</div>
+        <div id="result" class="result">0</div>
+      </div>
+
+      <div class="keys">
+        <!-- row 1 -->
+        <button class="btn alt" data-action="clear">C</button>
+        <button class="btn alt" data-action="back">⌫</button>
+        <button class="btn alt" data-value="(">(</button>
+        <button class="btn alt" data-value=")">)</button>
+
+        <!-- row 2 -->
+        <button class="btn" data-value="7">7</button>
+        <button class="btn" data-value="8">8</button>
+        <button class="btn" data-value="9">9</button>
+        <button class="btn op" data-value="/">÷</button>
+
+        <!-- row 3 -->
+        <button class="btn" data-value="4">4</button>
+        <button class="btn" data-value="5">5</button>
+        <button class="btn" data-value="6">6</button>
+        <button class="btn op" data-value="*">×</button>
+
+        <!-- row 4 -->
+        <button class="btn" data-value="1">1</button>
+        <button class="btn" data-value="2">2</button>
+        <button class="btn" data-value="3">3</button>
+        <button class="btn op" data-value="-">−</button>
+
+        <!-- row 5 -->
+        <button class="btn zero" data-value="0">0</button>
+        <button class="btn" data-value=".">.</button>
+        <button class="btn equal" data-action="equals">=</button>
+        <button class="btn op" data-value="+">+</button>
+      </div>
+
+      <footer class="foot">Built with ♥ — HTML • CSS • JavaScript</footer>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
